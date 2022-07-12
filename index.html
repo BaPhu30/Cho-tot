@@ -12,6 +12,17 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".hide").click(function () {
+                $("p").hide();
+            });
+            $(".show").click(function () {
+                $("p").show();
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -36,11 +47,20 @@
                             Quản lý tin
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item tooltip-dad">
                         <a class="nav-link" href="">
                             <i class="fa-solid fa-bag-shopping"></i>
                             Đơn Hàng
                         </a>
+                        <ul class="tooltip-child-1">
+                            <li>
+                                <p>Đơn mua</p>
+                            </li>
+                            <li>
+                                <p>Đơn bán</p>
+                            </li>
+                        </ul>
+                        <div class="tooltip-child-2"></div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="">
@@ -872,118 +892,115 @@
                         giấy
                         tờ đầy đủ.
                     </p>
-                    <a class="collapse1" data-toggle="collapse" href="#collapseExample" role="button"
-                        aria-expanded="false" aria-controls="collapseExample">
-                        Mở rộng <i class="fa-solid fa-angle-down"></i>
-                    </a>
-                    <div class="collapse" id="collapseExample">
-                        <p>
-                            <span>Đồ dùng cá nhân:</span> <a href="">quần áo, giày dép, túi xách, đồng hồ...</a> đa
-                            phong
-                            cách, hợp thời trang.
-                            <br>
-                            <span>Đồ điện tử:</span> <a href="">điện thoại di động, máy tính bảng, laptop, tivi, loa,
-                                amply...</a>; đồ điện gia dụng: <a href="">máy
-                                giặt, tủ lạnh, máy lạnh điều hòa...</a> với rất nhiều nhãn hiệu, kích thước khác nhau.
-                            <br>
-                            <a class="a__font-weight" href="">Vật nuôi, thú cưng</a> đa chủng loại: <a href="">gà, chó
-                                (chó
-                                phốc sóc, chó pug, chó poodle...), chim</a>, mèo (<a href="">mèo
-                                anh lông ngắn, mèo munchkin...</a>), cá, hamster giá cực tốt.
-                            <br>
-                            <span>Tuyển dụng, việc làm</span> với hàng triệu công việc hấp dẫn, phù hợp tại <a
-                                href="">Việc
-                                Làm Tốt</a> - Kênh tuyển dụng
-                            hiệu quả, uy tín được phát triển bởi Chợ Tốt.
-                            <br>
-                            <a class="a__font-weight" href="">Dịch vụ, du lịch:</a> khách sạn, vé máy bay, vé tàu, vé
-                            xe,
-                            tour du lịch và các voucher du lịch... uy
-                            tín, chất lượng.
-                            <br>
-                            <a class="a__font-weight" href="">Đồ ăn, thực phẩm:</a> các món ăn được chế biến thơm ngon,
-                            hấp
-                            dẫn, thực phẩm tươi sống, an toàn & giá
-                            cả hợp lý.
-                            <br>
-                            Và còn rất nhiều mặt hàng khác nữa đã và đang được rao bán tại Chợ Tốt.
-                            <br>
-                            Mỗi người trong chúng ta đều có những sản phẩm đã qua sử dụng và không cần dùng tới nữa. Vậy
-                            còn
-                            chần chừ gì nữa mà không để nó trở nên giá trị hơn với người khác. Rất đơn giản, bạn chỉ cần
-                            chụp
-                            hình lại, mô tả cụ thể về sản phẩm và sử dụng ứng dụng Đăng tin miễn phí của Chợ Tốt là đã
-                            có
-                            thể
-                            đến gần hơn với người cần nó.
-                            <br>
-                            Không những thế, website chotot.com còn cung cấp cho bạn thông tin về giá cả các mặt hàng để
-                            bạn
-                            có
-                            thể tham khảo. Đồng thời, thông qua Blog kinh nghiệm, Chợ Tốt sẽ tư vấn, chia sẻ cho bạn
-                            những
-                            thông
-                            tin bổ ích, bí quyết, mẹo vặt giúp bạn có những giao dịch mua bán an toàn, đảm bảo. Chợ Tốt
-                            cũng
-                            sẵn
-                            sàng hỗ trợ bạn trong mọi trường hợp cần thiết.
-                            <br>
-                            Chúc các bạn có những trải nghiệm mua bán tuyệt vời trên Chợ Tốt.
-                        </p>
-                    </div>
+                </div>
+                <div class="main__introduce--show-hide">
+                    <a class="show">Mở rộng <i class="fa-solid fa-angle-down"></i></a>
+                    <p>
+                        <span>Đồ dùng cá nhân:</span> <a href="">quần áo, giày dép, túi xách, đồng hồ...</a> đa
+                        phong
+                        cách, hợp thời trang.
+                        <br>
+                        <span>Đồ điện tử:</span> <a href="">điện thoại di động, máy tính bảng, laptop, tivi, loa,
+                            amply...</a>; đồ điện gia dụng: <a href="">máy
+                            giặt, tủ lạnh, máy lạnh điều hòa...</a> với rất nhiều nhãn hiệu, kích thước khác nhau.
+                        <br>
+                        <a class="a__font-weight" href="">Vật nuôi, thú cưng</a> đa chủng loại: <a href="">gà, chó
+                            (chó
+                            phốc sóc, chó pug, chó poodle...), chim</a>, mèo (<a href="">mèo
+                            anh lông ngắn, mèo munchkin...</a>), cá, hamster giá cực tốt.
+                        <br>
+                        <span>Tuyển dụng, việc làm</span> với hàng triệu công việc hấp dẫn, phù hợp tại <a href="">Việc
+                            Làm Tốt</a> - Kênh tuyển dụng
+                        hiệu quả, uy tín được phát triển bởi Chợ Tốt.
+                        <br>
+                        <a class="a__font-weight" href="">Dịch vụ, du lịch:</a> khách sạn, vé máy bay, vé tàu, vé
+                        xe,
+                        tour du lịch và các voucher du lịch... uy
+                        tín, chất lượng.
+                        <br>
+                        <a class="a__font-weight" href="">Đồ ăn, thực phẩm:</a> các món ăn được chế biến thơm ngon,
+                        hấp
+                        dẫn, thực phẩm tươi sống, an toàn & giá
+                        cả hợp lý.
+                        <br>
+                        Và còn rất nhiều mặt hàng khác nữa đã và đang được rao bán tại Chợ Tốt.
+                        <br>
+                        Mỗi người trong chúng ta đều có những sản phẩm đã qua sử dụng và không cần dùng tới nữa. Vậy
+                        còn
+                        chần chừ gì nữa mà không để nó trở nên giá trị hơn với người khác. Rất đơn giản, bạn chỉ cần
+                        chụp
+                        hình lại, mô tả cụ thể về sản phẩm và sử dụng ứng dụng Đăng tin miễn phí của Chợ Tốt là đã
+                        có
+                        thể
+                        đến gần hơn với người cần nó.
+                        <br>
+                        Không những thế, website chotot.com còn cung cấp cho bạn thông tin về giá cả các mặt hàng để
+                        bạn
+                        có
+                        thể tham khảo. Đồng thời, thông qua Blog kinh nghiệm, Chợ Tốt sẽ tư vấn, chia sẻ cho bạn
+                        những
+                        thông
+                        tin bổ ích, bí quyết, mẹo vặt giúp bạn có những giao dịch mua bán an toàn, đảm bảo. Chợ Tốt
+                        cũng
+                        sẵn
+                        sàng hỗ trợ bạn trong mọi trường hợp cần thiết.
+                        <br>
+                        Chúc các bạn có những trải nghiệm mua bán tuyệt vời trên Chợ Tốt.
+                    </p>
+                    <a class="hide">Thu gọn <i class="fa-solid fa-angle-up"></i></a>
                 </div>
                 <div class="main__popularity">
                     <h3>Các từ khóa phổ biến</h3>
                     <ul class="row">
-                        <li class="col-6 col-sm-3">Việc làm online tại nhà</li>
-                        <li class="col-6 col-sm-3">May gia công khẩu trang</li>
-                        <li class="col-6 col-sm-3">Nhận hàng gia công về nhà làm</li>
-                        <li class="col-6 col-sm-3">Việc làm bao ăn ở</li>
-                        <li class="col-6 col-sm-3">Samsung Note 10</li>
-                        <li class="col-6 col-sm-3">Việc làm mùa dịch</li>
-                        <li class="col-6 col-sm-3">Việc làm Thủ Đức</li>
-                        <li class="col-6 col-sm-3">Điện thoại Samsung</li>
-                        <li class="col-6 col-sm-3">điện thoại iPhone</li>
-                        <li class="col-6 col-sm-3">Việc làm Vĩnh Long</li>
-                        <li class="col-6 col-sm-3">Tìm việc làm TPHCM</li>
-                        <li class="col-6 col-sm-3">Việc làm quận Tân Bình</li>
-                        <li class="col-6 col-sm-3">Việc làm quận 9</li>
-                        <li class="col-6 col-sm-3">Việc Làm Quận 8</li>
-                        <li class="col-6 col-sm-3">Việc làm quận 7</li>
-                        <li class="col-6 col-sm-3">Việc làm Tiền Giang</li>
-                        <li class="col-6 col-sm-3">Việc làm Huế</li>
-                        <li class="col-6 col-sm-3">Việc làm Thanh Hóa</li>
-                        <li class="col-6 col-sm-3">Việc làm Long An</li>
-                        <li class="col-6 col-sm-3">Việc làm Đà Lạt</li>
-                        <li class="col-6 col-sm-3">Việc làm Hải Phòng</li>
-                        <li class="col-6 col-sm-3">Việc làm Hà Nội</li>
-                        <li class="col-6 col-sm-3">Việc làm Đồng Nai</li>
-                        <li class="col-6 col-sm-3">Việc làm Đà Nẵng</li>
-                        <li class="col-6 col-sm-3">Việc làm Cần Thơ</li>
-                        <li class="col-6 col-sm-3">Việc làm Bình Dương</li>
-                        <li class="col-6 col-sm-3">Việc làm Bến Tre</li>
-                        <li class="col-6 col-sm-3">Việc làm Bắc Ninh</li>
-                        <li class="col-6 col-sm-3">Việc làm An Giang</li>
-                        <li class="col-6 col-sm-3">Việc làm thêm tại nhà</li>
-                        <li class="col-6 col-sm-3">Dàn karaoke cũ</li>
-                        <li class="col-6 col-sm-3">Tivi cũ giá rẻ</li>
-                        <li class="col-6 col-sm-3">Việc Làm Thời Vụ</li>
-                        <li class="col-6 col-sm-3">Điện thoại Samsung cũ</li>
-                        <li class="col-6 col-sm-3">Chợ đồ cũ Hà Nội</li>
-                        <li class="col-6 col-sm-3">Chợ đồ cũ Sài Gòn</li>
-                        <li class="col-6 col-sm-3">Máy tính để bàn giá rẻ</li>
-                        <li class="col-6 col-sm-3">Ống kính (lens) cũ</li>
-                        <li class="col-6 col-sm-3">Máy ảnh cũ giá rẻ</li>
-                        <li class="col-6 col-sm-3">Máy quay cũ</li>
-                        <li class="col-6 col-sm-3">Micro cũ</li>
-                        <li class="col-6 col-sm-3">Tai nghe cũ</li>
-                        <li class="col-6 col-sm-3">Amply</li>
-                        <li class="col-6 col-sm-3">Loa cũ giá rẻ</li>
-                        <li class="col-6 col-sm-3">Máy tính để bàn cũ</li>
-                        <li class="col-6 col-sm-3">Máy tính bảng cũ giá rẻ</li>
-                        <li class="col-6 col-sm-3">Laptop cũ giá rẻ</li>
-                        <li class="col-6 col-sm-3">Điện thoại cũ giá rẻ</li>
-                        <li class="col-6 col-sm-3">Macbook</li>
+                        <li class="col-6 col-sm-3"><a>Việc làm online tại nhà</a></li>
+                        <li class="col-6 col-sm-3"><a>May gia công khẩu trang</a></li>
+                        <li class="col-6 col-sm-3"><a>Nhận hàng gia công về nhà làm</a></li>
+                        <li class="col-6 col-sm-3"><a>Việc làm bao ăn ở</a></li>
+                        <li class="col-6 col-sm-3"><a>Samsung Note 10</a></li>
+                        <li class="col-6 col-sm-3"><a>Việc làm mùa dịch</a></li>
+                        <li class="col-6 col-sm-3"><a>Việc làm Thủ Đức</a></li>
+                        <li class="col-6 col-sm-3"><a>Điện thoại Samsung</a></li>
+                        <li class="col-6 col-sm-3"><a>điện thoại iPhone</a></li>
+                        <li class="col-6 col-sm-3"><a>Việc làm Vĩnh Long</a></li>
+                        <li class="col-6 col-sm-3"><a>Tìm việc làm TPHCM</a></li>
+                        <li class="col-6 col-sm-3"><a>Việc làm quận Tân Bình</a></li>
+                        <li class="col-6 col-sm-3"><a>Việc làm quận 9</a></li>
+                        <li class="col-6 col-sm-3"><a>Việc Làm Quận 8</a></li>
+                        <li class="col-6 col-sm-3"><a>Việc làm quận 7</a></li>
+                        <li class="col-6 col-sm-3"><a>Việc làm Tiền Giang</a></li>
+                        <li class="col-6 col-sm-3"><a>Việc làm Huế</a></li>
+                        <li class="col-6 col-sm-3"><a>Việc làm Thanh Hóa</a></li>
+                        <li class="col-6 col-sm-3"><a>Việc làm Long An</a></li>
+                        <li class="col-6 col-sm-3"><a>Việc làm Đà Lạt</a></li>
+                        <li class="col-6 col-sm-3"><a>Việc làm Hải Phòng</a></li>
+                        <li class="col-6 col-sm-3"><a>Việc làm Hà Nội</a></li>
+                        <li class="col-6 col-sm-3"><a>Việc làm Đồng Nai</a></li>
+                        <li class="col-6 col-sm-3"><a>Việc làm Đà Nẵng</a></li>
+                        <li class="col-6 col-sm-3"><a>Việc làm Cần Thơ</a></li>
+                        <li class="col-6 col-sm-3"><a>Việc làm Bình Dương</a></li>
+                        <li class="col-6 col-sm-3"><a>Việc làm Bến Tre</a></li>
+                        <li class="col-6 col-sm-3"><a>Việc làm Bắc Ninh</a></li>
+                        <li class="col-6 col-sm-3"><a>Việc làm An Giang</a></li>
+                        <li class="col-6 col-sm-3"><a>Việc làm thêm tại nhà</a></li>
+                        <li class="col-6 col-sm-3"><a>Dàn karaoke cũ</a></li>
+                        <li class="col-6 col-sm-3"><a>Tivi cũ giá rẻ</a></li>
+                        <li class="col-6 col-sm-3"><a>Việc Làm Thời Vụ</a></li>
+                        <li class="col-6 col-sm-3"><a>Điện thoại Samsung cũ</a></li>
+                        <li class="col-6 col-sm-3"><a>Chợ đồ cũ Hà Nội</a></li>
+                        <li class="col-6 col-sm-3"><a>Chợ đồ cũ Sài Gòn</a></li>
+                        <li class="col-6 col-sm-3"><a>Máy tính để bàn giá rẻ</a></li>
+                        <li class="col-6 col-sm-3"><a>Ống kính (lens) cũ</a></li>
+                        <li class="col-6 col-sm-3"><a>Máy ảnh cũ giá rẻ</a></li>
+                        <li class="col-6 col-sm-3"><a>Máy quay cũ</a></li>
+                        <li class="col-6 col-sm-3"><a>Micro cũ</a></li>
+                        <li class="col-6 col-sm-3"><a>Tai nghe cũ</a></li>
+                        <li class="col-6 col-sm-3"><a>Amply</a></li>
+                        <li class="col-6 col-sm-3"><a>Loa cũ giá rẻ</a></li>
+                        <li class="col-6 col-sm-3"><a>Máy tính để bàn cũ</a></li>
+                        <li class="col-6 col-sm-3"><a>Máy tính bảng cũ giá rẻ</a></li>
+                        <li class="col-6 col-sm-3"><a>Laptop cũ giá rẻ</a></li>
+                        <li class="col-6 col-sm-3"><a>Điện thoại cũ giá rẻ</a></li>
+                        <li class="col-6 col-sm-3"><a>Macbook</a></li>
                     </ul>
                 </div>
             </div>
@@ -1080,6 +1097,9 @@
             </p>
         </div>
     </div>
+    <div class="main__advertisement--mobile">
+        <img src="./images/Quảng cáo mobile-footer.jpg" alt="">
+    </div>
     <div class="mobile__footer--background">
         <div class="mobile__footer">
             <div class="row">
@@ -1098,31 +1118,6 @@
             </div>
         </div>
     </div>
-    <div class="mobile__footer-nav--background">
-        <div class="nav mobile__footer-nav">
-            <a class="nav-link" href="">
-                <i class="fa-solid fa-house"></i>
-                <p>Trang chủ</p>
-            </a>
-            <a class="nav-link" href="">
-                <i class="fa-solid fa-face-grin-wide"></i>
-                <p>Quản lý tin</p>
-            </a>
-            <a class="nav-link" href="">
-                <i class="fa-solid fa-images"></i>
-                <p>Đăng tin</p>
-            </a>
-            <a class="nav-link" href="">
-                <i class="fa-solid fa-bell"></i>
-                <p>Thông báo</p>
-            </a>
-            <a class="nav-link" href="">
-                <i class="fa-solid fa-ellipsis"></i>
-                <p>Thêm</p>
-            </a>
-        </div>
-    </div>
-
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
