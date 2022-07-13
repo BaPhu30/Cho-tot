@@ -519,20 +519,6 @@ html {
     padding: 0;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .main__introduce-popularity {
     max-width: 960px;
     margin: auto;
@@ -599,26 +585,6 @@ html {
     display: none;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .main__popularity h3 {
     font-size: 16px;
     font-weight: bold;
@@ -638,26 +604,6 @@ html {
     line-height: 27px;
     padding: 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .footer__background {
     border-top: 12px solid #F4F4F4;
